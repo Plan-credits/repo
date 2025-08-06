@@ -1,10 +1,7 @@
 jobs:
   include:
-    - os: linux
+    - os: windows
       language: python
-      python:
-       - "3.8"
-      arch: amd64
-      dist: focal
+      python: "3.8"
       script:
         - python hello_world.py
