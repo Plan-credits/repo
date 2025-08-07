@@ -1,10 +1,7 @@
-os: windows
-language: node_js
-node_js:
-  - "18"
-
-arch: amd64
-
+os: 
+  - windows
+  - linux
+vm:
+  size: large
 script:
-  - node --version
-  - node hello.js
+  - echo "Hello World"
