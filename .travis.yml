@@ -4,8 +4,8 @@ arch: amd64
 
 install:
   - choco install python --version=3.8.0 -y
-  - python --version
-  - pip install --upgrade pip
+  - C:\Python38\python.exe -m ensurepip
+  - C:\Python38\python.exe -m pip install --upgrade pip
 
 script:
-  - python hello_world.py
+  - C:\Python38\python.exe hello_world.py
