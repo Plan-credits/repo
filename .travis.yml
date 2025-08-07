@@ -7,5 +7,4 @@ arch: amd64
 
 script:
   - node --version
-  - npm install
   - node hello.js
