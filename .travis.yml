@@ -1,10 +1,11 @@
 os: windows
-language: python
-python:
-  - "3.8"
+language: shell  # Use shell instead of python
 arch: amd64
 
 install:
+  - choco install python --version=3.8.0 -y
+  - refreshenv
+  - python --version
   - pip install --upgrade pip
 
 script:
